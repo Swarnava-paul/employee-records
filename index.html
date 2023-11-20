@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2C3</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="upper"><h1 id="h1">Employee Records</h1>
+      <div id="container">
+        <input id="search" value="" type="search" placeholder="Search ....">
+      <div><button onclick="search()"></button></div>
+        <div id="searchby">
+        <label for="searchby" id="label">Search By</label>
+        <select name="searchby" id="select1">
+          <option value="name">name</option>
+          <option value="employeeId">Employee id</option>
+          <option value="number">Number</option>
+          <option value="email">Email</option>
+        </select>
+      </div><!--end of searchby-->
+      </div><!--end of conttainer-->
+    </div><!--end of upper-->
+    <div id="showsearch">
+      <button id="close">close</button>
+      <P id="s"></P>
+    </div>
+<div id="main">
+    <div id="box">
+      
+      <form id="form">
+        <label for="">Employee Name</label><br />
+        <input value="" id="name" type="text" placeholder="Enter Student Name" /><br />
+        <label for="">Employee ID</label><br />
+        <input
+          id="employeeID"
+          type="number"
+          placeholder="Enter Employee ID" value=""
+        /><br />
+        <label for="">Department </label><br />
+        <select id="department">
+          <option value="">Select Department</option>
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Operations">Operations</option>
+          <option value="HR">HR</option>
+        ><br />
+        <label for="">Experience </label><br />
+        <input value="" id="exp" type="number" placeholder="Experience in Years" /><br />
+        <label for="">Email Address </label><br />
+        <input value="" type="text" id="email" placeholder="Enter Email Address" /><br />
+        <label for="">Mobile Number </label><br />
+        <input value="" id="mbl" type="number" placeholder="Enter Mobile number" /><br />
+        <input id="submit" type="submit" style="width: 66%; margin-left: 19%;" />
+    
+      </form>
+      <button id="clear" onclick="clearform()">Entry New Data</button>
+      </div><!--end of box div-->
+
+      <div class="table">
+      <table id="table">
+        
+        <thead id="head">
+          <tr>
+            <th>Name</th>
+            <th>Employee ID</th>
+            <th>Department</th>
+            <th>Experience in years</th>
+            <th>Email address</th>
+            <th>Mobile Number</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+       </table>
+      </div><!--end of table div-->
+    </div> <!--end of main div-->
+  </body>
+</html>
+
+<script src="record.js"></script>
